@@ -1,0 +1,30 @@
+{
+  "name": "easyid/easyid-php",
+  "description": "Official PHP SDK for the EasyID identity verification API.",
+  "type": "library",
+  "license": "proprietary",
+  "require": {
+    "php": "^8.2",
+    "guzzlehttp/guzzle": "^7.9"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "EasyID\\": "src/"
+    },
+    "classmap": [
+      "src/Services.php",
+      "src/Types.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "EasyID\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit --bootstrap vendor/autoload.php tests --testdox"
+  }
+}
