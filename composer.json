@@ -2,7 +2,18 @@
   "name": "easyid/easyid-php",
   "description": "Official PHP SDK for the EasyID identity verification API.",
   "type": "library",
-  "license": "proprietary",
+  "license": "MIT",
+  "homepage": "https://www.easyid.com.cn",
+  "authors": [
+    {
+      "name": "EasyID Team",
+      "homepage": "https://www.easyid.com.cn"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/easyid-com-cn/easyid-php/issues",
+    "source": "https://github.com/easyid-com-cn/easyid-php"
+  },
   "require": {
     "php": "^8.2",
     "guzzlehttp/guzzle": "^7.9"
