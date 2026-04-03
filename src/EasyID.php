@@ -17,7 +17,7 @@ final class EasyID
 
     public function __construct(string $keyId, string $secret, array $options = [])
     {
-        if (!preg_match('/^ak_[0-9a-f]+$/', $keyId)) {
+        if (!preg_match('/^ak_[0-9a-zA-Z_]+$/', $keyId)) {
             throw new \InvalidArgumentException('easyid: keyId must match ak_<hex>, got: ' . $keyId);
         }
         if ($secret === '') {
